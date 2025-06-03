@@ -6,6 +6,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     env:
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: '5'
     steps:
